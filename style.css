@@ -35,9 +35,9 @@ h1, h2, h3, p { margin-top: 0; }
 .hero-glow { position: absolute; inset: 0; opacity: .45; background: radial-gradient(circle at 83% 10%, rgba(215,165,58,.25), transparent 28%), radial-gradient(circle at 0 75%, rgba(45,121,174,.3), transparent 36%); pointer-events: none; }
 .hero-inner { position: relative; width: min(100%, 760px); min-height: calc(100svh - 64px); margin: 0 auto; padding: 54px 20px 48px; display: flex; flex-direction: column; align-items: center; text-align: center; }
 .hero-photo-frame { position: relative; width: 128px; height: 128px; flex: 0 0 128px; margin-bottom: 24px; overflow: hidden; border: 2px solid var(--gold); border-radius: 50%; box-shadow: 0 12px 38px rgba(0,0,0,.25); background: #e8edf2; }
-.hero-photo-frame img { position: absolute; top: -15%; left: -45%; width: 280%; max-width: none; height: auto; }
+.hero-photo-frame img { position: absolute; top: -8%; left: -40%; width: 180%; max-width: none; height: auto; }
 .hero-label { margin-bottom: 15px; padding: 7px 14px; border: 1px solid rgba(215,165,58,.45); border-radius: 999px; background: rgba(255,255,255,.05); color: var(--gold-soft); font-size: 11px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
-.hero h1 { margin-bottom: 12px; font-family: Georgia, "Noto Serif KR", serif; font-size: clamp(42px, 13vw, 66px); font-weight: 400; letter-spacing: .22em; line-height: 1.15; text-indent: .22em; }
+.hero h1 { margin-bottom: 12px; font-family: "Pretendard Variable", Pretendard, "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; font-size: clamp(42px, 13vw, 66px); font-weight: 800; letter-spacing: .16em; line-height: 1.08; text-indent: .16em; text-shadow: 0 2px 18px rgba(0, 0, 0, .18); -webkit-font-smoothing: antialiased; }
 .hero-role { margin-bottom: 6px; font-size: 17px; font-weight: 700; }
 .hero-location { margin-bottom: 24px; color: rgba(255,255,255,.68); font-size: 14px; }
 .hero-intro { width: 100%; margin-bottom: 20px; padding: 19px 18px; text-align: left; border-left: 2px solid var(--gold); border-radius: 0 14px 14px 0; background: rgba(255,255,255,.08); }
@@ -59,7 +59,7 @@ h1, h2, h3, p { margin-top: 0; }
 
 .profile { padding-bottom: 20px; }
 .profile-card { padding: 24px; display: grid; gap: 22px; background: var(--white); border: 1px solid rgba(16,43,70,.09); border-radius: var(--radius); box-shadow: var(--shadow); }
-.profile-card img { width: 100%; height: min(74vw, 340px); object-fit: cover; object-position: 32% center; border-radius: 14px; background: #e8edf2; }
+.profile-card img { width: 100%; height: min(74vw, 340px); object-fit: cover; object-position: center 29%; border-radius: 14px; background: #e8edf2; }
 .profile-card p { color: var(--muted); line-height: 1.85; }
 .profile-name { margin-bottom: 14px; color: var(--ink) !important; font-family: Georgia, "Noto Serif KR", serif; font-size: 25px; font-weight: 700; }
 .profile-name span { display: block; margin-top: 5px; color: #a87818; font-family: inherit; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; }
