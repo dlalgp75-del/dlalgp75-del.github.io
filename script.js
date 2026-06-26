@@ -1,9 +1,11 @@
 const menuButton = document.querySelector('.menu-button');
 const siteNav = document.querySelector('.site-nav');
 const topButton = document.querySelector('.top-button');
+const year = document.querySelector('#year');
 
 menuButton.addEventListener('click', () => {
   const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
+
   menuButton.setAttribute('aria-expanded', String(!isOpen));
   menuButton.textContent = isOpen ? '메뉴' : '닫기';
   siteNav.classList.toggle('is-open', !isOpen);
@@ -11,6 +13,7 @@ menuButton.addEventListener('click', () => {
 
 siteNav.addEventListener('click', (event) => {
   if (!event.target.matches('a')) return;
+
   menuButton.setAttribute('aria-expanded', 'false');
   menuButton.textContent = '메뉴';
   siteNav.classList.remove('is-open');
@@ -36,5 +39,6 @@ function updateTopButton() {
 
 topButton.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 window.addEventListener('scroll', updateTopButton, { passive: true });
-document.querySelector('#year').textContent = new Date().getFullYear();
+
+year.textContent = new Date().getFullYear();
 updateTopButton();

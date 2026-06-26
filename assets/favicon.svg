@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Lee Mihye favicon">
+  <rect width="64" height="64" rx="18" fill="#102b46" />
+  <circle cx="48" cy="16" r="10" fill="#d7a53a" opacity="0.9" />
+  <path d="M18 17h8v23h14v7H18V17Z" fill="#fff8e8" />
+  <path d="M35 17h8v30h-8V33H25v-7h10v-9Z" fill="#f0d99f" />
+</svg>

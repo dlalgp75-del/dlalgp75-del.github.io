@@ -3,17 +3,27 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>교육/ 프로젝트 운영 PM</title>
-    <meta name="description" content="교육과 프로젝트의 운영 흐름을 설계하고 참여자 관리부터 성과보고까지 완성하는 운영 PM" />
+    <title>이미혜 | Startup Education Operator</title>
+    <meta
+      name="description"
+      content="교육 프로그램의 실행력을 설계하고 창업교육, AI활용, 참여자 관리, 성과보고까지 연결하는 운영 PM 이미혜의 디지털 명함입니다."
+    />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://dlalgp75-del.github.io/" />
 
-    <meta property="og:title" content="교육/ 프로젝트 운영 PM" />
-    <meta property="og:description" content="교육과 프로젝트의 운영 흐름을 설계하고 참여자 관리부터 성과보고까지 완성하는 운영 PM" />
+    <meta property="og:title" content="이미혜 | Startup Education Operator" />
+    <meta
+      property="og:description"
+      content="교육 프로그램의 실행력을 설계하는 교육·프로젝트 운영 PM입니다."
+    />
     <meta property="og:type" content="profile" />
     <meta property="og:url" content="https://dlalgp75-del.github.io/" />
     <meta property="og:image" content="https://dlalgp75-del.github.io/assets/%EB%AA%85%ED%95%A8%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%82%AC%EC%A7%84.webp" />
-    <meta property="og:image:alt" content="교육 · 프로젝트 운영 PM 이미혜 프로필 이미지" />
+    <meta property="og:image:alt" content="교육·프로젝트 운영 PM 이미혜 프로필 이미지" />
+
+    <meta name="theme-color" content="#ff6b2c" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="alternate icon" href="assets/favicon.svg" />
 
     <!-- 네이버 서치어드바이저 소유확인 meta 태그 -->
     <meta name="naver-site-verification" content="129de9b3746210fc7289e3634376429705ed13fb" />
@@ -26,12 +36,13 @@
   <body>
     <header class="site-header">
       <div class="nav-shell">
-        <a class="wordmark" href="#hero" aria-label="이미혜 프로필 홈">이미혜</a>
+        <a class="wordmark" href="#hero" aria-label="이미혜 프로필 홈">MIHYE.OP</a>
         <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">메뉴</button>
         <nav class="site-nav" id="site-nav" aria-label="주요 메뉴">
           <a href="#hero">홈</a>
           <a href="#profile">소개</a>
-          <a href="#expertise">핵심 역량</a>
+          <a href="#expertise">실행 역량</a>
+          <a href="#work">운영 영역</a>
           <a href="#contact">연락</a>
         </nav>
       </div>
@@ -39,101 +50,174 @@
 
     <main>
       <section class="hero" id="hero" aria-labelledby="hero-title">
-        <div class="hero-glow" aria-hidden="true"></div>
         <div class="hero-inner">
-          <div class="hero-photo-frame">
-            <img src="assets/명함이미지-사진.webp" alt="교육 프로그램 운영 현장에서 태블릿을 든 이미혜 PM" width="600" height="800" />
+          <div class="hero-copy">
+            <p class="hero-label">Startup Education Operator · PM</p>
+            <h1 id="hero-title">교육 프로그램의<br />실행력을 설계합니다</h1>
+            <p class="hero-lead">
+              창업교육, AI활용 교육, 참여자 관리, 성과보고까지 흩어진 운영 요소를
+              실행 가능한 하나의 시스템으로 정리합니다.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="mailto:dlalgp75@gmail.com">문의하기</a>
+              <a class="button button-outline" href="#expertise">역량 보기</a>
+            </div>
           </div>
-          <p class="hero-label">Digital Profile · Project Manager</p>
-          <h1 id="hero-title">이 미 혜</h1>
-          <p class="hero-role">교육 · 프로젝트 운영 PM</p>
-          <p class="hero-location">서울 · 경기</p>
-          <div class="hero-intro">
-            <p>교육과 프로젝트의 운영 흐름을 설계하고</p>
-            <p>참여자 관리부터 성과보고까지 완성하는 운영 PM입니다.</p>
+
+          <div class="operator-card" aria-label="이미혜 운영 PM 프로필">
+            <div class="photo-panel">
+              <img
+                src="assets/명함이미지-사진.webp"
+                alt="교육 프로그램 운영 현장의 이미혜 PM"
+                width="600"
+                height="800"
+              />
+            </div>
+            <div class="operator-meta">
+              <p class="profile-name">이미혜</p>
+              <p>교육·프로젝트 운영 PM</p>
+            </div>
           </div>
-          <ul class="keyword-list" aria-label="핵심 키워드">
-            <li>창업교육</li><li>교육운영</li><li>참여자관리</li><li>성과보고</li><li>AI활용</li>
-          </ul>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#expertise">핵심 역량 보기</a>
-            <a class="button button-outline" href="https://github.com/dlalgp75-del" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a class="button button-ghost" href="mailto:dlalgP75@gmail.com">이메일 보내기</a>
-          </div>
+        </div>
+
+        <div class="command-strip" aria-label="운영 프로세스 요약">
+          <span>Plan</span>
+          <span>Operate</span>
+          <span>Report</span>
+          <strong>기획 → 운영 → 성과보고</strong>
         </div>
       </section>
 
       <section class="profile section" id="profile" aria-labelledby="profile-title">
         <div class="section-heading">
-          <p class="eyebrow">Profile</p>
-          <h2 id="profile-title">교육의 시작과 끝을<br />하나의 흐름으로 만듭니다.</h2>
+          <p class="eyebrow">Operator Brief</p>
+          <h2 id="profile-title">프로그램이 멈추지 않도록<br />운영의 흐름을 먼저 만듭니다.</h2>
         </div>
-        <div class="profile-card">
-          <img src="assets/명함이미지-사진.webp" alt="교육 프로그램을 운영하는 이미혜 PM의 프로필 사진" width="600" height="800" loading="lazy" />
-          <div>
-            <p class="profile-name">이미혜 <span>Project Manager</span></p>
-            <p>참여자가 교육에 들어오는 순간부터 과제와 결과물이 정리되고, 성과가 보고서로 남는 순간까지 운영의 맥락을 놓치지 않습니다.</p>
-            <div class="profile-meta">
-              <span>활동 지역</span><strong>서울 · 경기</strong>
-            </div>
-          </div>
+        <div class="brief-grid">
+          <article>
+            <span>01</span>
+            <h3>교육 목표를 실행 단위로 쪼갭니다.</h3>
+            <p>대상, 일정, 산출물, 커뮤니케이션을 운영 가능한 체크포인트로 바꿉니다.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>참여자가 끝까지 움직이게 합니다.</h3>
+            <p>참여자, 강사, 멘토, 기관 담당자 사이의 흐름을 조율합니다.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>성과가 보고서로 남게 합니다.</h3>
+            <p>운영 결과를 데이터와 메시지로 정리해 다음 의사결정까지 연결합니다.</p>
+          </article>
         </div>
       </section>
 
       <section class="expertise section" id="expertise" aria-labelledby="expertise-title">
-        <div class="section-heading">
-          <p class="eyebrow">Expertise</p>
-          <h2 id="expertise-title">운영을 성과로 연결하는<br />네 가지 핵심 역량</h2>
-          <p class="section-description">각 카드를 누르면 제가 맡는 역할을 자세히 볼 수 있습니다.</p>
+        <div class="section-heading section-heading-split">
+          <div>
+            <p class="eyebrow">Execution Stack</p>
+            <h2 id="expertise-title">PM의 실행 스택</h2>
+          </div>
+          <p class="section-description">각 항목을 누르면 제가 맡는 운영 역할을 볼 수 있습니다.</p>
         </div>
 
         <div class="accordion" data-accordion>
           <article class="accordion-item is-open">
-            <h3><button type="button" aria-expanded="true"><span class="index">01</span><span>교육 프로그램 설계</span><span class="toggle" aria-hidden="true">−</span></button></h3>
-            <div class="accordion-panel"><p>교육 목적과 대상에 맞는 운영프로세스와 성과 체계를 설계합니다.</p></div>
+            <h3>
+              <button type="button" aria-expanded="true">
+                <span class="index">01</span>
+                <span>창업교육 운영설계</span>
+                <span class="toggle" aria-hidden="true">−</span>
+              </button>
+            </h3>
+            <div class="accordion-panel">
+              <p>교육 목적과 대상에 맞춰 커리큘럼, 일정, 산출물, 운영 리듬을 설계합니다.</p>
+            </div>
           </article>
           <article class="accordion-item">
-            <h3><button type="button" aria-expanded="false"><span class="index">02</span><span>참여자 · 이해관계자 관리</span><span class="toggle" aria-hidden="true">+</span></button></h3>
-            <div class="accordion-panel" hidden><p>교육생, 강사, 멘토, 기관 담당자를 연결하고 운영합니다.</p></div>
+            <h3>
+              <button type="button" aria-expanded="false">
+                <span class="index">02</span>
+                <span>AI활용 교육 운영</span>
+                <span class="toggle" aria-hidden="true">+</span>
+              </button>
+            </h3>
+            <div class="accordion-panel" hidden>
+              <p>현장에서 바로 적용할 수 있는 AI 활용 교육을 기획하고 실행 흐름을 관리합니다.</p>
+            </div>
           </article>
           <article class="accordion-item">
-            <h3><button type="button" aria-expanded="false"><span class="index">03</span><span>운영프로세스 관리</span><span class="toggle" aria-hidden="true">+</span></button></h3>
-            <div class="accordion-panel" hidden><p>일정, 과제, 결과물, 커뮤니케이션을 체계적으로 관리합니다.</p></div>
+            <h3>
+              <button type="button" aria-expanded="false">
+                <span class="index">03</span>
+                <span>참여자·이해관계자 관리</span>
+                <span class="toggle" aria-hidden="true">+</span>
+              </button>
+            </h3>
+            <div class="accordion-panel" hidden>
+              <p>교육생, 강사, 멘토, 기관 담당자의 커뮤니케이션과 진행 상태를 정리합니다.</p>
+            </div>
           </article>
           <article class="accordion-item">
-            <h3><button type="button" aria-expanded="false"><span class="index">04</span><span>성과관리 및 보고</span><span class="toggle" aria-hidden="true">+</span></button></h3>
-            <div class="accordion-panel" hidden><p>교육 성과를 데이터로 정리하고 보고서까지 완성합니다.</p></div>
+            <h3>
+              <button type="button" aria-expanded="false">
+                <span class="index">04</span>
+                <span>성과관리 및 보고</span>
+                <span class="toggle" aria-hidden="true">+</span>
+              </button>
+            </h3>
+            <div class="accordion-panel" hidden>
+              <p>운영 성과를 데이터, 사례, 메시지로 구조화해 보고서까지 완성합니다.</p>
+            </div>
           </article>
         </div>
       </section>
 
       <section class="work section" id="work" aria-labelledby="work-title">
-        <div class="section-heading">
-          <p class="eyebrow">What I Do</p>
-          <h2 id="work-title">현재 집중하고 있는<br />활동 분야</h2>
+        <div class="section-heading section-heading-split">
+          <div>
+            <p class="eyebrow">Command Center</p>
+            <h2 id="work-title">집중하는 운영 영역</h2>
+          </div>
+          <p class="section-description">기획부터 마감까지, 프로젝트가 실제로 굴러가게 만드는 영역입니다.</p>
         </div>
         <div class="work-grid">
-          <article><span>01</span><h3>교육 프로그램 운영설계</h3><p>교육 목적과 대상에 맞는 운영체계를 설계합니다.</p></article>
-          <article><span>02</span><h3>AI활용 창업교육</h3><p>현장에서 바로 써볼 수 있는 AI 활용 교육을 운영합니다.</p></article>
-          <article><span>03</span><h3>창업 · 성장지원 프로그램</h3><p>예비창업자와 소상공인의 성장을 지원합니다.</p></article>
-          <article><span>04</span><h3>사회적경제 교육 · 지원사업</h3><p>사회적기업과 협동조합 지원사업을 운영합니다.</p></article>
-          <article><span>05</span><h3>성과관리 및 보고체계 구축</h3><p>운영 결과를 데이터와 보고서로 정리합니다.</p></article>
+          <article>
+            <span>01</span>
+            <h3>교육 프로그램 운영설계</h3>
+            <p>목표와 대상을 기준으로 운영체계를 설계합니다.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>AI활용 창업교육</h3>
+            <p>실무에 바로 적용할 수 있는 교육 흐름을 만듭니다.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>창업·성장지원 프로그램</h3>
+            <p>예비창업자와 소상공인의 실행을 지원합니다.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>사회적경제 교육·지원사업</h3>
+            <p>기관과 참여자를 연결하는 운영 기반을 만듭니다.</p>
+          </article>
         </div>
       </section>
 
       <section class="contact" id="contact" aria-labelledby="contact-title">
         <div class="contact-inner">
-          <p class="eyebrow">Let’s Work Together</p>
-          <h2 id="contact-title">사람과 성과를 연결하는<br />운영 PM</h2>
-          <p>교육과 프로젝트가 계획에서 끝나지 않도록 실행과 운영을 책임집니다.</p>
-          <a class="button button-gold" href="mailto:dlalgP75@gmail.com">연락하기</a>
+          <p class="eyebrow">Ready To Operate</p>
+          <h2 id="contact-title">계획에서 끝나지 않는<br />교육 운영이 필요하다면</h2>
+          <p>실행 가능한 구조와 안정적인 커뮤니케이션으로 프로젝트의 끝까지 함께합니다.</p>
+          <a class="button button-primary" href="mailto:dlalgp75@gmail.com">문의하기</a>
         </div>
       </section>
     </main>
 
     <footer>
-      <p>Digital Profile · 이미혜</p>
-      <p>PM · 서울 / 경기</p>
+      <p>MIHYE.OP · Startup Education Operator</p>
+      <p>서울 / 경기 · PM</p>
       <p class="copyright">© <span id="year"></span> Lee Mihye</p>
     </footer>
 
