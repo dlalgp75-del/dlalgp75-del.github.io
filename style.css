@@ -269,9 +269,8 @@ p {
   width: 100%;
   height: 100%;
   min-height: 380px;
-  object-fit: contain;
-  object-position: center bottom;
-  padding: 58px 48px 0;
+  object-fit: cover;
+  object-position: center;
 }
 
 .operator-meta {
@@ -400,6 +399,182 @@ p {
   color: var(--muted);
   font-size: 14px;
   line-height: 1.75;
+}
+
+.ops-simulator {
+  padding-top: 34px;
+}
+
+.simulator-panel {
+  display: grid;
+  gap: 14px;
+  padding: 14px;
+  background: var(--charcoal);
+  border-radius: 28px;
+  box-shadow: 0 24px 70px rgba(16, 19, 26, 0.16);
+}
+
+.simulator-controls,
+.simulator-result {
+  border-radius: 20px;
+}
+
+.simulator-controls {
+  display: grid;
+  gap: 12px;
+  padding: 18px;
+  background: #fff;
+}
+
+.range-control {
+  display: grid;
+  gap: 10px;
+  padding: 16px;
+  border: 1px solid rgba(16, 19, 26, 0.08);
+  border-radius: 16px;
+  background: #fffaf2;
+}
+
+.range-control span,
+.focus-control p,
+.result-score span,
+.result-grid span {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+}
+
+.range-control strong {
+  color: var(--ink);
+  font-size: 24px;
+  line-height: 1;
+}
+
+.range-control input {
+  width: 100%;
+  accent-color: var(--orange);
+  cursor: pointer;
+}
+
+.focus-control {
+  display: grid;
+  gap: 8px;
+  padding: 16px;
+  border: 1px solid rgba(16, 19, 26, 0.08);
+  border-radius: 16px;
+  background: #f7f4ee;
+}
+
+.focus-control button {
+  min-height: 46px;
+  padding: 0 14px;
+  border: 1px solid rgba(16, 19, 26, 0.1);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 950;
+  cursor: pointer;
+  transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease;
+}
+
+.focus-control button:hover {
+  transform: translateY(-1px);
+}
+
+.focus-control button.is-active {
+  background: var(--blue);
+  color: #fff;
+}
+
+.simulator-result {
+  display: grid;
+  gap: 18px;
+  padding: 22px;
+  background:
+    linear-gradient(135deg, rgba(23, 92, 255, 0.18), transparent 48%),
+    #202838;
+  color: #fff;
+}
+
+.result-score {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.result-score span,
+.result-grid span {
+  color: rgba(255, 255, 255, 0.58);
+}
+
+.result-score strong {
+  font-size: clamp(54px, 18vw, 96px);
+  font-weight: 950;
+  letter-spacing: -0.06em;
+  line-height: 0.82;
+}
+
+.result-message {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1.65;
+}
+
+.result-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.result-grid article {
+  display: grid;
+  gap: 8px;
+  padding: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.result-grid strong {
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.ops-checklist {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+  list-style: none;
+}
+
+.ops-checklist li {
+  position: relative;
+  padding: 12px 12px 12px 38px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.ops-checklist li::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 16px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--orange);
+  box-shadow: 0 0 0 4px rgba(255, 107, 44, 0.16);
 }
 
 .accordion {
@@ -655,7 +830,7 @@ footer p {
   }
 
   .photo-panel img {
-    padding: 88px 76px 0;
+    padding: 0;
   }
 
   .command-strip {
@@ -678,6 +853,28 @@ footer p {
 
   .brief-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .simulator-panel {
+    grid-template-columns: minmax(280px, 0.8fr) minmax(0, 1.2fr);
+    padding: 16px;
+  }
+
+  .simulator-controls,
+  .simulator-result {
+    padding: 24px;
+  }
+
+  .focus-control {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .focus-control p {
+    grid-column: 1 / -1;
+  }
+
+  .result-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .work-grid {
@@ -703,6 +900,6 @@ footer p {
 
 @media (min-width: 1080px) {
   .work-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }

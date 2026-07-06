@@ -18,8 +18,8 @@
     />
     <meta property="og:type" content="profile" />
     <meta property="og:url" content="https://dlalgp75-del.github.io/" />
-    <meta property="og:image" content="https://dlalgp75-del.github.io/assets/%EB%AA%85%ED%95%A8%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%82%AC%EC%A7%84.webp" />
-    <meta property="og:image:alt" content="교육·프로젝트 운영 PM 이미혜 프로필 이미지" />
+    <meta property="og:image" content="https://dlalgp75-del.github.io/assets/operations-profile.png" />
+    <meta property="og:image:alt" content="교육·프로젝트 운영 PM의 운영 데스크 이미지" />
 
     <meta name="theme-color" content="#ff6b2c" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
@@ -41,6 +41,7 @@
         <nav class="site-nav" id="site-nav" aria-label="주요 메뉴">
           <a href="#hero">홈</a>
           <a href="#profile">소개</a>
+          <a href="#ops-simulator">운영 시뮬레이터</a>
           <a href="#expertise">실행 역량</a>
           <a href="#work">운영 영역</a>
           <a href="#contact">연락</a>
@@ -67,8 +68,8 @@
           <div class="operator-card" aria-label="이미혜 운영 PM 프로필">
             <div class="photo-panel">
               <img
-                src="assets/명함이미지-사진.webp"
-                alt="교육 프로그램 운영 현장의 이미혜 PM"
+                src="assets/operations-profile.png"
+                alt="교육 프로그램 운영을 위한 노트북, 일정표, 체크리스트가 놓인 운영 데스크"
                 width="600"
                 height="800"
               />
@@ -112,6 +113,64 @@
         </div>
       </section>
 
+      <section class="ops-simulator section" id="ops-simulator" aria-labelledby="ops-simulator-title">
+        <div class="section-heading section-heading-split">
+          <div>
+            <p class="eyebrow">Interactive Planner</p>
+            <h2 id="ops-simulator-title">운영 난이도를 직접 맞춰보세요</h2>
+          </div>
+          <p class="section-description">프로그램 규모와 중점 영역을 바꾸면 필요한 운영 리듬이 바로 정리됩니다.</p>
+        </div>
+
+        <div class="simulator-panel" data-ops-simulator>
+          <div class="simulator-controls" aria-label="운영 조건 선택">
+            <label class="range-control" for="participant-count">
+              <span>참여자 수</span>
+              <strong><output for="participant-count" data-participant-output>35명</output></strong>
+              <input id="participant-count" type="range" min="10" max="120" value="35" step="5" data-participant-range />
+            </label>
+
+            <label class="range-control" for="program-weeks">
+              <span>운영 기간</span>
+              <strong><output for="program-weeks" data-week-output>4주</output></strong>
+              <input id="program-weeks" type="range" min="2" max="12" value="4" step="1" data-week-range />
+            </label>
+
+            <div class="focus-control" role="group" aria-label="운영 중점 선택">
+              <p>운영 중점</p>
+              <button class="is-active" type="button" data-focus-option="launch" aria-pressed="true">모집·온보딩</button>
+              <button type="button" data-focus-option="live" aria-pressed="false">현장 실행</button>
+              <button type="button" data-focus-option="report" aria-pressed="false">성과 보고</button>
+            </div>
+          </div>
+
+          <div class="simulator-result" aria-live="polite">
+            <div class="result-score">
+              <span>운영 집중도</span>
+              <strong data-ops-score>62</strong>
+            </div>
+            <p class="result-message" data-ops-message>
+              참여자 흐름을 빠르게 잡고, 안내 메시지와 사전 체크리스트를 먼저 고정하는 구성이 좋습니다.
+            </p>
+            <div class="result-grid">
+              <article>
+                <span>권장 리듬</span>
+                <strong data-ops-rhythm>주 2회 체크인</strong>
+              </article>
+              <article>
+                <span>핵심 산출물</span>
+                <strong data-ops-deliverable>온보딩 안내문</strong>
+              </article>
+            </div>
+            <ul class="ops-checklist" data-ops-checklist>
+              <li>참여자 명단과 연락 채널 정리</li>
+              <li>첫 안내 메시지와 제출 일정 확정</li>
+              <li>문의 응대 기준과 담당자 역할 분리</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <section class="expertise section" id="expertise" aria-labelledby="expertise-title">
         <div class="section-heading section-heading-split">
           <div>
@@ -126,30 +185,18 @@
             <h3>
               <button type="button" aria-expanded="true">
                 <span class="index">01</span>
-                <span>창업교육 운영설계</span>
+                <span>교육 운영 설계·관리</span>
                 <span class="toggle" aria-hidden="true">−</span>
               </button>
             </h3>
             <div class="accordion-panel">
-              <p>교육 목적과 대상에 맞춰 커리큘럼, 일정, 산출물, 운영 리듬을 설계합니다.</p>
+              <p>교육 목적과 대상에 맞춰 커리큘럼, 일정, 산출물, 운영 리듬을 설계하고 관리합니다.</p>
             </div>
           </article>
           <article class="accordion-item">
             <h3>
               <button type="button" aria-expanded="false">
                 <span class="index">02</span>
-                <span>AI활용 교육 운영</span>
-                <span class="toggle" aria-hidden="true">+</span>
-              </button>
-            </h3>
-            <div class="accordion-panel" hidden>
-              <p>현장에서 바로 적용할 수 있는 AI 활용 교육을 기획하고 실행 흐름을 관리합니다.</p>
-            </div>
-          </article>
-          <article class="accordion-item">
-            <h3>
-              <button type="button" aria-expanded="false">
-                <span class="index">03</span>
                 <span>참여자·이해관계자 관리</span>
                 <span class="toggle" aria-hidden="true">+</span>
               </button>
@@ -161,7 +208,7 @@
           <article class="accordion-item">
             <h3>
               <button type="button" aria-expanded="false">
-                <span class="index">04</span>
+                <span class="index">03</span>
                 <span>성과관리 및 보고</span>
                 <span class="toggle" aria-hidden="true">+</span>
               </button>
@@ -189,16 +236,11 @@
           </article>
           <article>
             <span>02</span>
-            <h3>AI활용 창업교육</h3>
-            <p>실무에 바로 적용할 수 있는 교육 흐름을 만듭니다.</p>
-          </article>
-          <article>
-            <span>03</span>
             <h3>창업·성장지원 프로그램</h3>
             <p>예비창업자와 소상공인의 실행을 지원합니다.</p>
           </article>
           <article>
-            <span>04</span>
+            <span>03</span>
             <h3>사회적경제 교육·지원사업</h3>
             <p>기관과 참여자를 연결하는 운영 기반을 만듭니다.</p>
           </article>
