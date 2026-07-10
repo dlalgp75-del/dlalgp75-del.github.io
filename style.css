@@ -514,10 +514,27 @@ p {
 }
 
 .result-score strong {
+  display: inline-flex;
+  align-items: end;
+  gap: 4px;
   font-size: clamp(54px, 18vw, 96px);
   font-weight: 950;
   letter-spacing: -0.06em;
   line-height: 0.82;
+}
+
+.result-score small {
+  margin-bottom: 4px;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+.result-note {
+  margin: -6px 0 0;
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 13px;
+  line-height: 1.65;
 }
 
 .result-message {
@@ -714,6 +731,16 @@ footer {
 
 footer p {
   margin-bottom: 7px;
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 17px;
+  font-weight: 850;
+}
+
+.footer-link:hover {
+  color: #fff;
 }
 
 .copyright {
