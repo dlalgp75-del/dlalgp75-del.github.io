@@ -3,142 +3,52 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#fff7f8">
+<meta name="theme-color" content="#fff4f7">
 <meta property="og:title" content="너에게 ♥">
 <meta property="og:description" content="너한테 보여주고 싶은 게 있어.">
-<meta property="og:image" content="https://dlalgp75-del.github.io/love-assets/photo3.jpg?v=3">
-<meta property="og:type" content="website">
 <title>너에게 ♥</title>
-<meta name="love-version" content="2026-08-30-fix3">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Gowun+Dodum&display=swap');
-:root{--rose:#ff718f;--rose2:#ff9cac;--ink:#513940;--sub:#9b7b83;--paper:#fffdf9;--cream:#fff9f3}
-*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html,body{margin:0;width:100%;height:100%;overflow:hidden}body{font-family:'Gowun Dodum',system-ui,sans-serif;color:var(--ink);background:linear-gradient(145deg,#fffafb,#ffe9ef);overscroll-behavior:none}button{font:inherit}.app{position:relative;width:100%;height:100dvh;isolation:isolate}.bg{position:fixed;inset:0;z-index:-2;background:radial-gradient(circle at 10% 8%,rgba(255,255,255,.95),transparent 28%),radial-gradient(circle at 95% 90%,rgba(255,155,178,.24),transparent 34%),linear-gradient(145deg,#fffafb,#ffe9ef)}.floaters{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:-1}.fh{position:absolute;bottom:-45px;color:rgba(255,113,143,.13);animation:rise linear infinite}@keyframes rise{0%{transform:translateY(0) rotate(0);opacity:0}10%{opacity:1}100%{transform:translateY(-115vh) rotate(35deg);opacity:0}}.page{position:absolute;inset:0;padding:20px;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transform:translateX(34px) scale(.985);transition:opacity .48s ease,transform .48s ease}.page.active{opacity:1;pointer-events:auto;transform:none}.page.exit{opacity:0;transform:translateX(-34px) scale(.985)}.shell{width:min(900px,100%);max-height:88dvh;overflow:auto;padding:8px 6px 55px;scrollbar-width:none}.shell::-webkit-scrollbar{display:none}.center{text-align:center}.eyebrow{font-size:11px;letter-spacing:.23em;color:var(--sub);margin-bottom:16px}h1,h2,h3{font-family:'Gowun Batang',serif}h1{font-size:clamp(45px,11vw,88px);line-height:1.08;margin:0;font-weight:700;letter-spacing:-.055em}h2{font-size:clamp(34px,7vw,58px);line-height:1.22;margin:0 0 12px;letter-spacing:-.04em}h3{margin:0}.sub{color:var(--sub);line-height:1.75;font-size:14px}.question{text-align:center;width:min(700px,100%)}.zone{position:relative;width:min(470px,92vw);height:205px;margin:25px auto 0}.choice{position:absolute;top:44px;border:0;border-radius:999px;padding:15px 32px;font-weight:700;font-size:17px;cursor:pointer;box-shadow:0 14px 36px rgba(106,60,73,.12)}#yes{left:22px;background:linear-gradient(135deg,var(--rose),var(--rose2));color:#fff}#no{right:22px;background:rgba(255,255,255,.88);color:#63464e;transition:left .14s ease,top .14s ease}.tease{position:absolute;left:0;right:0;bottom:12px;color:#ad8c95;font-size:12px}.glass{width:min(720px,94vw);padding:clamp(34px,7vw,65px);text-align:center;border-radius:30px;background:rgba(255,255,255,.66);border:1px solid rgba(255,255,255,.9);backdrop-filter:blur(18px);box-shadow:0 28px 80px rgba(111,64,77,.14)}.heartbig{font-size:55px;display:inline-block;animation:beat 1.45s infinite}@keyframes beat{50%{transform:scale(1.09)}}.glass p{font-family:'Gowun Batang',serif;line-height:2;font-size:clamp(17px,3.5vw,21px);color:#745760}.reasonGrid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:25px}.reason{background:rgba(255,255,255,.66);border:1px solid rgba(255,255,255,.9);border-radius:24px;padding:25px 22px;text-align:left;box-shadow:0 13px 34px rgba(100,60,70,.07)}.reason .n{color:var(--rose);font-size:12px;font-weight:700;letter-spacing:.12em}.reason h3{font-size:22px;margin:8px 0 7px}.reason p{margin:0;color:#82656d;line-height:1.7;font-size:14px}.secret{margin-top:18px;border:1px solid rgba(255,113,143,.2);background:rgba(255,255,255,.65);border-radius:999px;padding:11px 17px;color:#8a6570;font-size:13px;cursor:pointer}.secretText{height:0;opacity:0;overflow:hidden;transition:.55s ease;font-family:'Gowun Batang',serif;color:#74545e}.secretText.show{height:58px;opacity:1;padding-top:16px}.paper{position:relative;width:min(690px,94vw);height:min(77dvh,735px);overflow:auto;background:var(--paper);border-radius:13px;padding:clamp(34px,6vw,62px);box-shadow:0 28px 80px rgba(111,64,77,.16);scrollbar-width:none}.paper::-webkit-scrollbar{display:none}.paper:before{content:"";position:absolute;inset:16px;border:1px solid rgba(145,100,109,.12);border-radius:7px;pointer-events:none}.paper .tiny{font-family:'Gowun Batang',serif;font-style:italic;color:#aa8b92;font-size:13px;margin-bottom:18px}.letter{white-space:pre-wrap;font-family:'Gowun Batang',serif;line-height:2.05;font-size:clamp(16px,3vw,19px);color:#574148}.sig{text-align:right;margin-top:34px;font-family:'Gowun Batang',serif;color:#886872}.songWrap{position:relative;z-index:2;margin:18px 0 26px;padding:14px;border-radius:18px;background:linear-gradient(135deg,rgba(255,238,242,.92),rgba(255,250,251,.95));border:1px solid rgba(255,113,143,.18);box-shadow:0 10px 28px rgba(100,60,70,.07)}.songLabel{margin:0 0 9px;font-size:12px;color:#8d6972;letter-spacing:.03em}.songWrap iframe{display:block;width:100%;height:80px;border:0;border-radius:12px}.album{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:start;margin-top:26px}.polaroid{background:#fff;padding:10px 10px 18px;border-radius:8px;box-shadow:0 18px 45px rgba(83,52,60,.14);transform:rotate(-1.5deg)}.polaroid:nth-child(2){transform:rotate(1.7deg);margin-top:27px}.polaroid:nth-child(3){transform:rotate(-.8deg);margin-top:7px}.polaroid img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:5px;background:#eee}.polaroid:nth-child(1) img{object-position:center 31%}.polaroid:nth-child(2) img{object-position:center 34%}.polaroid:nth-child(3) img{object-position:center 35%}.caption{font-family:'Gowun Batang',serif;margin-top:13px;color:#765961;font-size:13px;line-height:1.55}.promiseGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:25px}.promise{min-height:205px;text-align:left;display:flex;flex-direction:column;justify-content:space-between;background:rgba(255,255,255,.67);border:1px solid rgba(255,255,255,.9);border-radius:25px;padding:24px;box-shadow:0 13px 34px rgba(100,60,70,.07)}.ico{font-size:30px}.promise h3{font-size:21px;margin:8px 0}.promise p{font-size:14px;line-height:1.7;color:#82656d;margin:0}.finalQ{font-family:'Gowun Batang',serif;font-size:clamp(31px,7vw,56px);line-height:1.35;margin:7px 0 25px}.finalBtn{border:0;border-radius:999px;padding:15px 30px;background:linear-gradient(135deg,var(--rose),var(--rose2));color:#fff;font-weight:700;font-size:17px;box-shadow:0 14px 35px rgba(255,113,143,.3);cursor:pointer}.finalMsg{max-height:0;opacity:0;overflow:hidden;transition:.75s ease;font-family:'Gowun Batang',serif;font-size:18px;line-height:1.95;color:#74555e}.finalMsg.show{max-height:280px;opacity:1;margin-top:28px}.next{position:fixed;right:17px;top:50%;transform:translateY(-50%) scale(.87);width:58px;height:58px;border:1px solid rgba(255,113,143,.22);border-radius:50%;background:rgba(255,255,255,.78);backdrop-filter:blur(14px);box-shadow:0 14px 35px rgba(100,60,70,.13);color:var(--rose);font-size:26px;display:grid;place-items:center;opacity:0;pointer-events:none;transition:.32s;z-index:20}.next.show{opacity:1;pointer-events:auto;transform:translateY(-50%) scale(1)}.back{position:fixed;left:14px;top:max(18px,env(safe-area-inset-top));border:0;background:transparent;color:#a98790;font-size:13px;opacity:0;pointer-events:none;z-index:20}.back.show{opacity:.9;pointer-events:auto}.progress{position:fixed;left:50%;bottom:max(15px,env(safe-area-inset-bottom));transform:translateX(-50%);display:flex;gap:7px;opacity:0;z-index:20}.progress.show{opacity:1}.dot{width:6px;height:6px;border-radius:50%;background:rgba(112,77,87,.18);transition:.3s}.dot.on{width:20px;border-radius:99px;background:rgba(255,113,143,.75)}.burst{position:fixed;left:50%;top:50%;z-index:80;pointer-events:none}.burst i{position:absolute;font-style:normal;font-size:18px;color:rgba(255,113,143,.92);animation:burst .95s ease-out forwards}@keyframes burst{to{transform:translate(var(--x),var(--y)) rotate(var(--r));opacity:0}}
-@media(max-width:720px){.page{padding:17px}.reasonGrid{grid-template-columns:1fr}.album{grid-template-columns:1fr;max-width:420px;margin-left:auto;margin-right:auto;gap:24px}.polaroid,.polaroid:nth-child(2),.polaroid:nth-child(3){margin-top:0;transform:none;padding:9px 9px 17px;border-radius:12px}.polaroid img{aspect-ratio:4/5}.promiseGrid{grid-template-columns:1fr}.promise{min-height:auto}.next{right:11px;width:52px;height:52px}.paper{height:78dvh}.shell{max-height:90dvh}}
+:root{--rose:#ff6f91;--rose2:#ff9fb2;--ink:#503840;--sub:#9a7881;--paper:#fffdf9}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html,body{margin:0;width:100%;height:100%;overflow:hidden}body{font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;color:var(--ink);background:linear-gradient(145deg,#fffafb,#ffe7ee)}button{font:inherit}.app{position:relative;width:100%;height:100dvh;isolation:isolate}.bg{position:fixed;inset:0;z-index:-2;background:radial-gradient(circle at 10% 8%,#fff 0,rgba(255,255,255,.72) 22%,transparent 38%),radial-gradient(circle at 90% 92%,rgba(255,143,168,.25),transparent 35%),linear-gradient(145deg,#fff9fb,#ffe8ee)}.floaters{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}.fh{position:absolute;bottom:-50px;color:rgba(255,111,145,.14);animation:rise linear infinite}@keyframes rise{0%{transform:translateY(0) rotate(0);opacity:0}10%{opacity:1}100%{transform:translateY(-115vh) rotate(35deg);opacity:0}}.page{position:absolute;inset:0;padding:20px;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transform:translateX(34px) scale(.985);transition:.5s ease}.page.active{opacity:1;pointer-events:auto;transform:none}.page.exit{opacity:0;transform:translateX(-34px) scale(.985)}.shell{width:min(900px,100%);max-height:88dvh;overflow:auto;padding:8px 6px 70px;scrollbar-width:none}.shell::-webkit-scrollbar,.paper::-webkit-scrollbar{display:none}.center{text-align:center}.eyebrow{font-size:11px;letter-spacing:.22em;color:var(--sub);margin-bottom:15px}h1,h2,h3{font-family:Georgia,"Nanum Myeongjo","Batang",serif;font-weight:500}h1{font-size:clamp(46px,11vw,88px);line-height:1.03;margin:0;letter-spacing:-.045em}h2{font-size:clamp(34px,7vw,58px);line-height:1.25;margin:0 0 12px;letter-spacing:-.035em}.sub{color:var(--sub);line-height:1.75;font-size:14px}.question{width:min(700px,100%);text-align:center}.zone{position:relative;width:min(470px,92vw);height:205px;margin:25px auto 0}.choice{position:absolute;top:44px;border:0;border-radius:999px;padding:15px 32px;font-weight:800;font-size:17px;cursor:pointer;box-shadow:0 14px 36px rgba(106,60,73,.12)}#yes{left:22px;background:linear-gradient(135deg,var(--rose),var(--rose2));color:#fff}#no{right:22px;background:rgba(255,255,255,.9);color:#63464e;transition:left .14s,top .14s}.tease{position:absolute;left:0;right:0;bottom:12px;color:#ad8c95;font-size:12px}.glass{width:min(720px,94vw);padding:clamp(34px,7vw,66px);text-align:center;border-radius:30px;background:rgba(255,255,255,.68);border:1px solid rgba(255,255,255,.92);backdrop-filter:blur(18px);box-shadow:0 28px 80px rgba(111,64,77,.14)}.heartbig{font-size:55px;display:inline-block;animation:beat 1.45s infinite}@keyframes beat{50%{transform:scale(1.09)}}.glass p{font-family:Georgia,"Batang",serif;line-height:2;font-size:clamp(17px,3.5vw,21px);color:#745760}.reasonGrid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:25px}.reason{background:rgba(255,255,255,.68);border:1px solid rgba(255,255,255,.92);border-radius:24px;padding:25px 22px;text-align:left;box-shadow:0 13px 34px rgba(100,60,70,.07)}.reason .n{color:var(--rose);font-size:12px;font-weight:800;letter-spacing:.12em}.reason h3{font-size:22px;margin:8px 0}.reason p{margin:0;color:#82656d;line-height:1.72;font-size:14px}.secret{margin-top:18px;border:1px solid rgba(255,111,145,.2);background:rgba(255,255,255,.68);border-radius:999px;padding:11px 17px;color:#8a6570;font-size:13px}.secretText{height:0;opacity:0;overflow:hidden;transition:.55s;font-family:Georgia,"Batang",serif;color:#74545e}.secretText.show{height:60px;opacity:1;padding-top:16px}.paper{position:relative;width:min(690px,94vw);height:min(77dvh,735px);overflow:auto;background:var(--paper);border-radius:14px;padding:clamp(34px,6vw,62px);box-shadow:0 28px 80px rgba(111,64,77,.16);scrollbar-width:none}.paper:before{content:"";position:absolute;inset:16px;border:1px solid rgba(145,100,109,.12);border-radius:7px;pointer-events:none}.paper .tiny{font-family:Georgia,serif;font-style:italic;color:#aa8b92;font-size:13px;margin-bottom:18px}.letter{white-space:pre-wrap;font-family:Georgia,"Batang",serif;line-height:2.05;font-size:clamp(16px,3vw,19px);color:#574148}.sig{text-align:right;margin-top:34px;font-family:Georgia,"Batang",serif;color:#886872}.album{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin:28px auto 0;max-width:720px;align-items:start}.polaroid{margin:0;background:#fff;padding:10px 10px 18px;border-radius:12px;box-shadow:0 18px 45px rgba(83,52,60,.14)}.polaroid:nth-child(2n){transform:rotate(1.2deg);margin-top:22px}.polaroid:nth-child(2n+1){transform:rotate(-1deg)}.polaroid img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:7px;background:linear-gradient(135deg,#f6edf0,#eee);opacity:0;transition:opacity .35s}.polaroid img.ready{opacity:1}.polaroid.square img{aspect-ratio:1/1}.caption{font-family:Georgia,"Batang",serif;margin-top:13px;color:#765961;font-size:13px;line-height:1.55}.promiseGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:25px}.promise{min-height:205px;text-align:left;display:flex;flex-direction:column;justify-content:space-between;background:rgba(255,255,255,.68);border:1px solid rgba(255,255,255,.92);border-radius:25px;padding:24px;box-shadow:0 13px 34px rgba(100,60,70,.07)}.ico{font-size:30px}.promise h3{font-size:21px;margin:8px 0}.promise p{font-size:14px;line-height:1.7;color:#82656d;margin:0}.finalQ{font-family:Georgia,"Batang",serif;font-size:clamp(31px,7vw,56px);line-height:1.35;margin:7px 0 25px}.finalBtn{border:0;border-radius:999px;padding:15px 30px;background:linear-gradient(135deg,var(--rose),var(--rose2));color:#fff;font-weight:800;font-size:17px;box-shadow:0 14px 35px rgba(255,111,145,.3)}.finalMsg{max-height:0;opacity:0;overflow:hidden;transition:.75s;font-family:Georgia,"Batang",serif;font-size:18px;line-height:1.95;color:#74555e}.finalMsg.show{max-height:280px;opacity:1;margin-top:28px}.next{position:fixed;right:17px;top:50%;transform:translateY(-50%) scale(.87);width:58px;height:58px;border:1px solid rgba(255,111,145,.22);border-radius:50%;background:rgba(255,255,255,.8);backdrop-filter:blur(14px);box-shadow:0 14px 35px rgba(100,60,70,.13);color:var(--rose);font-size:26px;display:grid;place-items:center;opacity:0;pointer-events:none;transition:.32s;z-index:20}.next.show{opacity:1;pointer-events:auto;transform:translateY(-50%) scale(1)}.back{position:fixed;left:14px;top:max(18px,env(safe-area-inset-top));border:0;background:transparent;color:#a98790;font-size:13px;opacity:0;pointer-events:none;z-index:20}.back.show{opacity:.9;pointer-events:auto}.progress{position:fixed;left:50%;bottom:max(15px,env(safe-area-inset-bottom));transform:translateX(-50%);display:flex;gap:7px;opacity:0;z-index:20}.progress.show{opacity:1}.dot{width:6px;height:6px;border-radius:50%;background:rgba(112,77,87,.18);transition:.3s}.dot.on{width:20px;border-radius:99px;background:rgba(255,111,145,.75)}.burst{position:fixed;left:50%;top:50%;z-index:80;pointer-events:none}.burst i{position:absolute;font-style:normal;font-size:18px;color:rgba(255,111,145,.92);animation:burst .95s ease-out forwards}@keyframes burst{to{transform:translate(var(--x),var(--y)) rotate(var(--r));opacity:0}}
+.musicFab{position:fixed;left:14px;bottom:max(16px,env(safe-area-inset-bottom));z-index:40;width:48px;height:48px;border-radius:50%;border:0;background:linear-gradient(135deg,#242424,#444);color:#fff;font-size:20px;box-shadow:0 12px 34px rgba(0,0,0,.18);opacity:0;pointer-events:none;transition:.3s}.musicFab.show{opacity:1;pointer-events:auto}.musicPanel{position:fixed;z-index:50;left:50%;bottom:max(72px,calc(env(safe-area-inset-bottom) + 60px));width:min(390px,calc(100vw - 24px));padding:13px;border-radius:22px;background:rgba(255,255,255,.96);box-shadow:0 25px 70px rgba(69,42,50,.24);border:1px solid rgba(255,111,145,.14);transform:translate(-50%,130%);opacity:0;pointer-events:none;transition:.42s ease}.musicPanel.open{transform:translate(-50%,0);opacity:1;pointer-events:auto}.musicTop{display:flex;justify-content:space-between;align-items:center;padding:2px 3px 10px}.musicTop b{font-size:13px}.musicTop span{font-size:11px;color:var(--sub)}.musicClose{border:0;background:#f6eef1;color:#755660;width:30px;height:30px;border-radius:50%}.musicPanel iframe{display:block;width:100%;height:152px;border:0;border-radius:14px}.musicHint{text-align:center;font-size:11px;color:#9c7b84;margin:8px 0 0;line-height:1.5}
+@media(max-width:720px){.page{padding:17px}.reasonGrid,.promiseGrid{grid-template-columns:1fr}.promise{min-height:auto}.album{grid-template-columns:1fr;max-width:330px;gap:24px}.polaroid,.polaroid:nth-child(2n),.polaroid:nth-child(2n+1){margin-top:0;transform:none}.polaroid img{aspect-ratio:3/4}.polaroid.square img{aspect-ratio:1/1}.next{right:11px;width:52px;height:52px}.paper{height:78dvh}.shell{max-height:90dvh}}
 </style>
 </head>
 <body>
-<div class="app">
-<div class="bg"></div><div class="floaters" id="floaters"></div>
+<div class="app"><div class="bg"></div><div class="floaters" id="floaters"></div>
+<section class="page active"><div class="question"><div class="eyebrow">JUST ONE QUESTION</div><h1>나 사랑하지?</h1><p class="sub">대답은 신중하게 해줘 :)</p><div class="zone" id="zone"><button class="choice" id="yes">응 ♥</button><button class="choice" id="no">아니</button><div class="tease" id="tease">정답은 하나뿐이야.</div></div></div></section>
+<section class="page"><div class="glass"><div class="heartbig">♥</div><div class="eyebrow">I KNEW IT</div><h2>그럴 줄 알았어.</h2><p>사실 정답을 확인하려고 만든 건 아니고,<br>너한테 조금 오래 남을 말을<br><b>제대로 해주고 싶어서 만들었어.</b></p></div></section>
+<section class="page"><div class="shell center"><div class="eyebrow">WHY I LOVE YOU</div><h2>내가 너를 좋아하는 이유.</h2><p class="sub">다 적으면 끝이 없을 것 같아서, 정말 조금만.</p><div class="reasonGrid"><div class="reason"><div class="n">01</div><h3>네가 웃으면 나도 좋아져서</h3><p>그냥 네가 기분 좋게 웃고 있는 걸 보면 나도 괜히 같이 기분이 좋아져.</p></div><div class="reason"><div class="n">02</div><h3>평범한 순간까지 기억나서</h3><p>대단한 일이 아니어도 너랑 나눈 말, 장난, 표정 같은 게 생각보다 오래 남아.</p></div><div class="reason"><div class="n">03</div><h3>네 앞에서는 편해져서</h3><p>잘 보이려고 애쓰는 순간보다 그냥 나답게 있을 수 있는 시간이 더 좋아.</p></div><div class="reason"><div class="n">04</div><h3>결국 그냥, 너라서</h3><p>이유를 붙이고 붙여도 마지막 답은 똑같더라. 네가 너라서 좋아.</p></div></div><button class="secret" id="secret">여기 한 번 눌러봐 ♥</button><div class="secretText" id="secretText">사실 이거 만들면서 네 사진 진짜 오래 보고 있었어.</div></div></section>
+<section class="page"><article class="paper"><div class="tiny">for you, always.</div><h2>사랑하는 너에게.</h2><div class="letter">이걸 만들면서 네 사진을 한참 보고 있었어.
+그냥 예뻐서 본 것도 맞는데, 보고 있으니까 우리가 나눈 말들이랑 같이 있었던 순간들이 하나씩 생각나더라.
 
-<section class="page active">
-  <div class="question">
-    <div class="eyebrow">JUST ONE QUESTION</div>
-    <h1>나 사랑하지?</h1>
-    <p class="sub">대답은 신중하게 해줘 :)</p>
-    <div class="zone" id="zone">
-      <button class="choice" id="yes">응 ♥</button>
-      <button class="choice" id="no">아니</button>
-      <div class="tease" id="tease">정답은 하나뿐이야.</div>
-    </div>
-  </div>
-</section>
+너를 만나고 나서 특별한 날만 좋은 게 아니라 평범한 하루도 조금씩 좋아진 것 같아. 별거 아닌 얘기로 웃었던 순간도, 괜히 장난쳤던 것도, 그냥 가만히 같이 있었던 시간도 나한테는 생각보다 소중해.
 
-<section class="page">
-  <div class="glass">
-    <div class="heartbig">♥</div>
-    <div class="eyebrow">I KNEW IT</div>
-    <h2>그럴 줄 알았어.</h2>
-    <p>사실 정답을 확인하려고 만든 건 아니고,<br>너한테 조금 오래 남을 말을<br><b>제대로 해주고 싶어서 만들었어.</b></p>
-  </div>
-</section>
+내가 항상 완벽하게 잘해주지는 못하겠지만 네가 기분 좋은 날에는 누구보다 같이 웃어주고 싶고, 힘든 날에는 네 편에서 오래 있어주고 싶어.
 
-<section class="page">
-  <div class="shell center">
-    <div class="eyebrow">WHY I LOVE YOU</div>
-    <h2>내가 너를 좋아하는 이유.</h2>
-    <p class="sub">다 적으면 끝이 없을 것 같아서, 정말 조금만.</p>
-    <div class="reasonGrid">
-      <div class="reason"><div class="n">01</div><h3>네가 웃으면 나도 좋아져서</h3><p>그냥 네가 기분 좋게 웃고 있는 걸 보면 나도 괜히 같이 기분이 좋아져.</p></div>
-      <div class="reason"><div class="n">02</div><h3>평범한 순간까지 기억나서</h3><p>대단한 일이 아니어도 너랑 나눈 말, 장난, 표정 같은 게 생각보다 오래 남아.</p></div>
-      <div class="reason"><div class="n">03</div><h3>네 앞에서는 편해져서</h3><p>잘 보이려고 애쓰는 순간보다 그냥 나답게 있을 수 있는 시간이 더 좋아.</p></div>
-      <div class="reason"><div class="n">04</div><h3>결국 그냥, 너라서</h3><p>이유를 붙이고 붙여도 마지막 답은 똑같더라. 네가 너라서 좋아.</p></div>
-    </div>
-    <button class="secret" id="secret">여기 한 번 눌러봐 ♥</button>
-    <div class="secretText" id="secretText">사실 이거 만들면서 네 사진 진짜 오래 보고 있었어.</div>
-  </div>
-</section>
+앞으로도 같이 맛있는 거 먹고, 예쁜 곳도 가고, 사진도 많이 찍고, 가끔은 아무것도 안 하면서 시간을 보내자. 그렇게 별거 아닌 하루들이 쌓여서 나중에 돌아봤을 때 정말 좋은 시간이었으면 좋겠어.
 
-<section class="page" id="letterPage">
-  <article class="paper">
-    <div class="tiny">for you, always.</div>
-    <h2>사랑하는 너에게.</h2>
-    <div class="songWrap">
-      <div class="songLabel">🎧 이 노래를 재생하고 편지를 읽어줘 ♥</div>
-      <iframe src="https://open.spotify.com/embed/track/6x01fGn7wBcgbULOPWnErb?utm_source=generator&theme=0" title="우리 노래" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="eager"></iframe>
-    </div>
-    <div class="letter">이걸 만들면서 네 사진을 한참 보고 있었어.
-그냥 예쁘다는 생각보다, 내가 좋아하는 사람이 너라는 게 참 좋더라.
-
-우리가 늘 완벽하게 좋은 날만 보내는 건 아니겠지만, 좋은 날에는 같이 더 크게 웃고 힘든 날에는 네 편이 되어주고 싶어. 특별한 무언가를 해주고 싶다기보다 네 평범한 하루 속에 오래 남는 사람이 되고 싶어.
-
-너랑 나눈 사소한 대화, 별거 아닌 장난, 괜히 보고 싶은 순간들이 나한테는 생각보다 크게 남아 있어. 아마 그래서 앞으로 같이 만들 장면들이 더 기대되나 봐.
-
-내가 표현이 서툴 때도 있고 마음만큼 잘 못해줄 때도 있겠지만, 너를 아끼는 마음만큼은 대충하지 않을게.
-
-내 옆에 있어줘서 고맙고,
-앞으로도 많이 웃게 해줄게.
-
-사랑해. 오늘보다 내일 더.</div>
-    <div class="sig">— 너를 많이 좋아하는 사람이</div>
-  </article>
-</section>
-
-<section class="page">
-  <div class="shell center">
-    <div class="eyebrow">OUR LITTLE ALBUM</div>
-    <h2>내가 좋아하는 장면들.</h2>
-    <p class="sub">사진을 볼 때마다 그때의 기분까지 같이 기억났으면 좋겠어.</p>
-    <div class="album">
-      <figure class="polaroid"><img src="https://dlalgp75-del.github.io/love-assets/photo1.jpg?v=3" alt="추억 사진 1"><figcaption class="caption">괜히 계속 보게 되는 사진.<br>그냥 네 모습이 좋아.</figcaption></figure>
-      <figure class="polaroid"><img src="https://dlalgp75-del.github.io/love-assets/photo2.jpg?v=3" alt="추억 사진 2"><figcaption class="caption">이런 순간들도 하나씩<br>오래 기억해 두고 싶어.</figcaption></figure>
-      <figure class="polaroid"><img src="https://dlalgp75-del.github.io/love-assets/photo3.jpg?v=3" alt="추억 사진 3"><figcaption class="caption">그리고 우리의 한 장면.<br>앞으로 더 많이 남기자.</figcaption></figure>
-    </div>
-  </div>
-</section>
-
-<section class="page">
-  <div class="shell center">
-    <div class="eyebrow">FROM NOW ON</div>
-    <h2>앞으로 같이 하고 싶은 것.</h2>
-    <p class="sub">거창한 약속보다 이런 평범한 것들을 오래 같이 하고 싶어.</p>
-    <div class="promiseGrid">
-      <div class="promise"><div class="ico">☕</div><div><h3>별거 없는 데이트</h3><p>맛있는 거 먹고, 카페 가고, 그냥 걷다가 아무 얘기나 하는 날 많이 만들기.</p></div></div>
-      <div class="promise"><div class="ico">📷</div><div><h3>사진 더 많이 남기기</h3><p>지금 사진 세 장으로 시작했지만, 나중에는 고르기 힘들 만큼 추억 많이 만들기.</p></div></div>
-      <div class="promise"><div class="ico">🤍</div><div><h3>계속 네 편이기</h3><p>좋은 날에는 제일 크게 웃어주고, 힘든 날에는 말없이도 옆에 있어주기.</p></div></div>
-    </div>
-  </div>
-</section>
-
-<section class="page">
-  <div class="glass">
-    <div class="eyebrow">ONE MORE QUESTION</div>
-    <div class="finalQ">앞으로도<br>내 옆에 있어줄래?</div>
-    <button class="finalBtn" id="finalBtn">당연하지 ♥</button>
-    <div class="finalMsg" id="finalMsg">고마워.<br>지금까지의 우리도 좋지만,<br><b>앞으로의 우리가 더 기대돼.</b><br><br>사랑해. 많이.</div>
-  </div>
-</section>
-
-<button class="back" id="back">← 이전</button>
-<button class="next" id="next">→</button>
-<div class="progress" id="progress"></div>
+그리고 이건 꼭 말하고 싶었어.
+내가 너를 정말 많이 좋아해.
+지금까지의 우리도 좋지만 앞으로의 우리가 더 기대돼.</div><div class="sig">— 너를 많이 좋아하는 사람이 ♥</div></article></section>
+<section class="page"><div class="shell center"><div class="eyebrow">OUR LITTLE ALBUM</div><h2>내가 좋아하는 네 모습들.</h2><p class="sub">이번엔 진짜 내가 골라둔 사진들로 채웠어.</p><div class="album"><figure class="polaroid"><img id="photo1" alt="추억 사진 1"><figcaption class="caption">보고 있으면 괜히 웃음 나는 사진.<br>이런 모습까지 전부 좋아.</figcaption></figure><figure class="polaroid"><img id="photo2" alt="추억 사진 2"><figcaption class="caption">그냥 네 사진인데도<br>한참 보게 되는 이유가 있더라.</figcaption></figure><figure class="polaroid square"><img id="photo3" alt="추억 사진 3"><figcaption class="caption">햇빛까지 예뻤던 순간.<br>오래 기억하고 싶은 한 장.</figcaption></figure><figure class="polaroid"><img id="photo4" alt="추억 사진 4"><figcaption class="caption">그리고 내가 좋아하는 미소.<br>앞으로 더 많이 웃게 해줄게.</figcaption></figure></div></div></section>
+<section class="page"><div class="shell center"><div class="eyebrow">FROM NOW ON</div><h2>앞으로도 같이.</h2><p class="sub">거창한 약속보다 이런 평범한 것들을 오래 같이 하고 싶어.</p><div class="promiseGrid"><div class="promise"><div class="ico">☕</div><div><h3>사소한 데이트</h3><p>맛있는 거 먹고, 카페 가고, 아무 계획 없이 걷는 날도 많이 만들기.</p></div></div><div class="promise"><div class="ico">📷</div><div><h3>추억 더 남기기</h3><p>사진을 더 올릴 자리가 모자랄 만큼 같이 좋은 순간을 많이 만들기.</p></div></div><div class="promise"><div class="ico">🤍</div><div><h3>항상 네 편</h3><p>좋은 날엔 제일 크게 웃어주고 힘든 날엔 조용히 옆에 있어주기.</p></div></div></div></div></section>
+<section class="page"><div class="glass"><div class="eyebrow">ONE MORE QUESTION</div><div class="finalQ">앞으로도<br>내 옆에 있어줄래?</div><button class="finalBtn" id="finalYes">당연하지 ♥</button><div class="finalMsg" id="finalMsg">고마워.<br>지금까지의 우리도 좋지만,<br><b>앞으로의 우리가 더 기대돼.</b><br><br>사랑해. 많이. ♥</div></div></section>
+<button class="back" id="back">← 이전</button><button class="next" id="next">→</button><div class="progress" id="progress"></div>
+<button class="musicFab" id="musicFab" aria-label="음악 플레이어 열기">♫</button><div class="musicPanel" id="musicPanel"><div class="musicTop"><div><b>우리 노래 🎧</b><br><span>사이트 안에서 재생돼</span></div><button class="musicClose" id="musicClose">×</button></div><iframe src="https://open.spotify.com/embed/track/6x01fGn7wBcgbULOPWnErb?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="eager"></iframe><p class="musicHint">▶️를 한 번 눌러줘. 닫아도 음악은 계속 재생돼.</p></div>
 </div>
 <script>
-const pages=[...document.querySelectorAll('.page')];
-const yes=document.getElementById('yes'),no=document.getElementById('no'),zone=document.getElementById('zone'),tease=document.getElementById('tease'),next=document.getElementById('next'),back=document.getElementById('back'),progress=document.getElementById('progress');
-let page=1,loved=false;
-for(let i=0;i<18;i++){const h=document.createElement('div');h.className='fh';h.textContent=Math.random()>.45?'♥':'♡';h.style.left=Math.random()*100+'%';h.style.fontSize=(12+Math.random()*18)+'px';h.style.animationDuration=(9+Math.random()*11)+'s';h.style.animationDelay=(-Math.random()*15)+'s';document.getElementById('floaters').appendChild(h)}
+const pages=[...document.querySelectorAll('.page')],yes=document.getElementById('yes'),no=document.getElementById('no'),zone=document.getElementById('zone'),tease=document.getElementById('tease'),next=document.getElementById('next'),back=document.getElementById('back'),progress=document.getElementById('progress'),musicFab=document.getElementById('musicFab'),musicPanel=document.getElementById('musicPanel'),musicClose=document.getElementById('musicClose');let page=1,loved=false;
+for(let i=0;i<18;i++){const h=document.createElement('div');h.className='fh';h.textContent=Math.random()>.45?'♥':'♡';h.style.left=Math.random()*100+'%';h.style.fontSize=12+Math.random()*18+'px';h.style.animationDuration=9+Math.random()*10+'s';h.style.animationDelay=-Math.random()*14+'s';document.getElementById('floaters').appendChild(h)}
 for(let i=0;i<pages.length;i++){const d=document.createElement('span');d.className='dot';progress.appendChild(d)}
 function nav(){[...progress.children].forEach((d,i)=>d.classList.toggle('on',i===page-1));progress.classList.toggle('show',page>1);back.classList.toggle('show',page>1);next.classList.toggle('show',page===1?loved:page<pages.length)}
-function moveNo(){const zr=zone.getBoundingClientRect(),br=no.getBoundingClientRect(),mx=Math.max(10,zr.width-br.width-10),my=Math.max(10,zr.height-br.height-10);no.style.right='auto';no.style.left=(10+Math.random()*Math.max(1,mx-10))+'px';no.style.top=(10+Math.random()*Math.max(1,my-10))+'px';const m=['어라? 😶','진짜…?','다시 생각해봐 👀','그 버튼 맞아?','도망간다 🏃','정답은 반대쪽인데? 😌'];tease.textContent=m[Math.floor(Math.random()*m.length)]}
+function moveNo(){const zr=zone.getBoundingClientRect(),br=no.getBoundingClientRect(),mx=Math.max(10,zr.width-br.width-10),my=Math.max(10,zr.height-br.height-10);no.style.right='auto';no.style.left=10+Math.random()*Math.max(1,mx-10)+'px';no.style.top=10+Math.random()*Math.max(1,my-10)+'px';const m=['어라? 😶','진짜…?','다시 생각해봐 👀','그 버튼 맞아?','도망간다 🏃','정답은 반대쪽인데? 😌'];tease.textContent=m[Math.floor(Math.random()*m.length)]}
 ['mouseenter','pointerdown','touchstart'].forEach(e=>no.addEventListener(e,x=>{x.preventDefault();moveNo()},{passive:false}));no.onclick=e=>{e.preventDefault();moveNo()};
-function burst(n=26){const b=document.createElement('div');b.className='burst';document.body.appendChild(b);for(let i=0;i<n;i++){const x=document.createElement('i');x.textContent=i%3?'♥':'♡';x.style.setProperty('--x',(Math.random()*340-170)+'px');x.style.setProperty('--y',(Math.random()*320-180)+'px');x.style.setProperty('--r',(Math.random()*280-140)+'deg');b.appendChild(x)}setTimeout(()=>b.remove(),1100)}
-yes.onclick=()=>{loved=true;yes.textContent='나도 사랑해 ♥';tease.textContent='그럴 줄 알았어 :)';burst();nav()};
-function show(n){if(n<1||n>pages.length||(page===1&&!loved&&n>1))return;const old=pages[page-1];old.classList.add('exit');old.classList.remove('active');setTimeout(()=>old.classList.remove('exit'),520);page=n;pages[page-1].classList.add('active');nav()}
-next.onclick=()=>show(page+1);back.onclick=()=>show(page-1);
-document.getElementById('secret').onclick=()=>{document.getElementById('secretText').classList.add('show');document.getElementById('secret').textContent='들켰네 :)'};
-document.getElementById('finalBtn').onclick=()=>{burst(42);document.getElementById('finalMsg').classList.add('show');document.getElementById('finalBtn').textContent='나도 사랑해 ♥'};
-nav();
+function burst(n=28){const b=document.createElement('div');b.className='burst';document.body.appendChild(b);for(let i=0;i<n;i++){const x=document.createElement('i');x.textContent=i%3?'♥':'♡';x.style.setProperty('--x',(Math.random()*320-160)+'px');x.style.setProperty('--y',(Math.random()*300-170)+'px');x.style.setProperty('--r',(Math.random()*260-130)+'deg');b.appendChild(x)}setTimeout(()=>b.remove(),1000)}
+yes.onclick=()=>{loved=true;yes.textContent='나도 사랑해 ♥';tease.textContent='그럴 줄 알았어 :)';burst();musicFab.classList.add('show');musicPanel.classList.add('open');nav()};musicFab.onclick=()=>musicPanel.classList.add('open');musicClose.onclick=()=>musicPanel.classList.remove('open');
+function show(n){if(n<1||n>pages.length||(page===1&&!loved&&n>1))return;const c=pages[page-1];c.classList.add('exit');c.classList.remove('active');setTimeout(()=>c.classList.remove('exit'),520);page=n;pages[page-1].classList.add('active');nav()}
+next.onclick=()=>show(page+1);back.onclick=()=>show(page-1);document.getElementById('secret').onclick=()=>document.getElementById('secretText').classList.toggle('show');document.getElementById('finalYes').onclick=()=>{burst(40);document.getElementById('finalMsg').classList.add('show')};
+async function txt(url){const r=await fetch(url,{cache:'force-cache'});if(!r.ok)throw new Error(url);return(await r.text()).trim()}async function loadPhoto(id,parts){try{const data=(await Promise.all(parts.map(txt))).join('');const img=document.getElementById(id);img.onload=()=>img.classList.add('ready');img.src='data:image/webp;base64,'+data}catch(e){console.error(e)}}
+loadPhoto('photo1',['love-data-v4/p1a.txt?v=4','love-data-v4/p1b.txt?v=4']);loadPhoto('photo2',['love-data-v4/p2.txt?v=4']);loadPhoto('photo3',['love-data-v4/p3.txt?v=4']);loadPhoto('photo4',['love-data-v4/p4.txt?v=4']);nav();
 </script>
-</body>
-</html>
+</body></html>
